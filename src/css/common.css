@@ -1,0 +1,131 @@
+/**
+* @Author: zhangye
+* @Date:   2017-07-06 16:20:25
+* @Email:   zhangye1@emoney.com
+* @Version:   1.0
+* @Last Modified by:   zhangye
+* @Last Modified time: 2017-09-08 14:33:36
+*/
+
+body{ font-family:"Microsoft Yahei",Verdana,Arial,"宋体"; color:#9AC4FC;background-color: #030829;}
+table, div, p, td, li, dd, a {font:inherit;}
+ul,li{padding: 0;margin: 0;}
+select, input, textarea, button {font:inherit;}
+.tc {text-align: center;}
+.f-rose {color:#BE3FDE; }
+.f-green {color:#3FB9DE; }
+.f-yellow{color: #DE993F;}
+.f-red {color: #D7345A;}
+.pt10 {padding-top:15px;}
+
+.mainpack {}
+.mainpack .tb {width: 100%;border:0;padding-bottom: 35px;}
+.mainpack .tb{}
+/*.mainpack .top,.mainpack .bottom {padding:45px 35px 0 35px;}*/
+.iconsbg {width: 140px;height: 126px;background: url(../images/iconbg.png) transparent center top no-repeat;overflow: visible;padding-top: 40px;}
+.icons {width:60px;height:60px;margin: 0 auto;background: url(../images/icons.png) no-repeat;overflow: visible;}
+.iconsbg .num {font-size:36px;line-height: 36px;}
+.iconsbg .text {opacity: .5;}
+.icons.t1{background-position: 0 -5px;}
+.icons.t2{background-position: -60px -5px;}
+.icons.t3{background-position: -120px -5px;}
+.icons.t4{background-position: -180px -5px;}
+.icons.t5{background-position: -240px -5px;}
+.icons.t6{background-position: -300px -5px;}
+.icons.t7{background-position: -360px -5px;}
+.icons.t8{background-position: -420px -5px;}
+.icons.t9{background-position: -480px -5px;}
+.on.iconsbg,.iconsbg:hover{background: url(../images/iconbg_over.png)transparent center top  no-repeat;}
+.on .icons.t1,.icons.t1:hover{background-position: 0px -65px;}
+.on .icons.t2,.icons.t2:hover{background-position: -60px -65px;}
+.on .icons.t3,.icons.t3:hover{background-position: -120px -65px;}
+.on .icons.t4,.icons.t4:hover{background-position: -180px -65px;}
+.on .icons.t5,.icons.t5:hover{background-position: -240px -65px;}
+.on .icons.t6,.icons.t6:hover{background-position: -300px -65px;}
+.on .icons.t7,.icons.t7:hover{background-position: -360px -65px;}
+.on .icons.t8,.icons.t8:hover{background-position: -420px -65px;}
+.on .icons.t9,.icons.t9:hover{background-position: -480px -66px;}
+.mainpack .monitor-menu>li{width:32%;position:relative;/*background: url(../images/iconbg.png) #030829 center top no-repeat;*/display: inline-block;*display: inline;*zoom: 1; list-style:none;text-align: center;padding-top: 92px;}
+.mainpack .monitor-menu>li>p{padding-top:15px;}
+.mainpack .monitor-menu>li .iconsbg{padding-top:0;    position: absolute; ;left: 110px;top: 0;-webkit-animation:normalcircle 20s infinite linear;}
+.mainpack .monitor-menu>li .icons {
+    position: absolute;
+    left: 149px;
+    top: 42px;
+}
+.mainpack .bar{background-color: rgba(42, 51, 96, 0.5);border-radius: 15px;height: 27px;line-height: 27px;text-align:right;padding-right: 5px;width: 100%;}
+.mainpack .bar.graybg{background-color: #2A3360;width:56px;}
+.mainpack .bar.redbg{background-color: rgb(241,58,97);}
+.mainpack .details>li{list-style:none;position: relative;height: 30px;line-height: 30px;color: #fff;margin-right: 50px;padding: 15px 0;}
+.mainpack .details>li:after{clear: both;content: '';visibility: hidden;display: block;height: 0;}
+.mainpack .details>li .text{position: absolute;left:0;top:0;z-index: 2;}
+.mainpack .details>li .bar{position: absolute;right:0;top:0;}
+
+/* 主控 */
+.monitorpack{position: relative;width:661px;padding:70px 125px;overflow:hidden;margin:0 auto;height: 270px;}
+.monitorpack .centre{background:url(../images/centre.png) center center no-repeat;width:187px;height:187px;overflow:hidden;position:absolute;left: 355px;top: 110px;z-index: 1;}
+/*.monitorpack .over4{background:url(../images/centre_over.png)center center no-repeat;}*/
+/*.monitorpack .centre-hover.centre1{transform:rotate(45deg);}
+.monitorpack .centre2{background:url(../images/centre_over.png)center center no-repeat;transform:rotate(90deg);}
+.monitorpack .centre3{ background:url(../images/centre_over.png)center center no-repeat;transform:rotate(135deg);}*/
+/*[class~="monitorover"] .centre{background-image:url(../images/centre_over.png);}
+.monitorpack.over1 .centre{transform:0; }
+.monitorpack.over2 .centre{transform:rotate(45deg); }
+.monitorpack.over3 .centre{transform:rotate(90deg); }
+.monitorpack.over4 .centre{transform:rotate(135deg); }
+.monitorpack.over5 .centre{transform:rotate(180deg); }
+.monitorpack.over6 .centre{transform:rotate(225deg); }
+.monitorpack.over7 .centre{transform:rotate(270deg);}
+.monitorpack.over8 .centre{transform:rotate(315deg);}*/
+.monitorpack .centre.over{background-image:url(../images/centre_over.png);display: none;}
+.monitorpack .centre.centre-over1{transform:0; z-index:2;}
+.monitorpack .centre.centre-over2{transform:rotate(45deg); z-index:3;}
+.monitorpack .centre.centre-over3{transform:rotate(90deg); z-index:4;}
+.monitorpack .centre.centre-over4{transform:rotate(135deg);z-index:5;}
+.monitorpack .centre.centre-over5{transform:rotate(180deg);z-index:6;}
+.monitorpack .centre.centre-over6{transform:rotate(225deg);z-index:7;}
+.monitorpack .centre.centre-over7{transform:rotate(270deg);z-index:8;}
+.monitorpack .centre.centre-over8{transform:rotate(315deg);z-index:9;}
+
+.monitorpack .line {background:url(../images/line.png)no-repeat;width:661px;height: 268px;overflow:hidden;position: absolute;left: 120px;top: 70px;z-index:2;}
+.monitorpack .pos5{position: absolute;left:160px;top:255px;z-index:4;} 
+.monitorpack .pos6{position: absolute;left:-5px;top:230px;z-index:4;} 
+.monitorpack .pos7{position: absolute;left:-5px;top:60px;z-index:4;} 
+.monitorpack .pos8{position: absolute;left:160px;top:10px;z-index:4;} 
+.monitorpack .pos4{position: absolute;right:170px;top:255px;z-index:4;} 
+.monitorpack .pos3{position: absolute;right:0;top:230px;z-index:4;} 
+.monitorpack .pos2{position: absolute;right:0;top:60px;z-index:4;} 
+.monitorpack .pos1{position: absolute;right:170px;top:10px;z-index:4;} 
+.monitorpack.over1 .pos1,.monitorpack.over2 .pos2,.monitorpack.over3 .pos3,.monitorpack.over4 .pos4,.monitorpack.over5 .pos5,.monitorpack.over6 .pos6,.monitorpack.over7 .pos7,.monitorpack.over8 .pos8{color: #f13a61;}
+.monitorpack.over1 .pos1 .icons.t5{background-position: -240px -65px;}
+.monitorpack.over2 .pos2 .icons.t6{background-position: -300px -65px}
+.monitorpack.over3 .pos3 .icons.t7{background-position: -360px -65px;}
+.monitorpack.over4 .pos4 .icons.t8{background-position: -420px -65px;}
+.monitorpack.over5 .pos5 .icons.t4{background-position: -180px -65px;}
+.monitorpack.over6 .pos6 .icons.t3{background-position: -120px -65px;}
+.monitorpack.over7 .pos7 .icons.t1{background-position: 0px -65px;}
+.monitorpack.over8 .pos8 .icons.t2{background-position: -60px -65px;}
+
+/* 主控 end */
+/* 表盘 */
+.dial {width:390px;height: 390px;background:url(../images/dial.png)no-repeat; overflow:hidden; position: relative;}
+.dial .unit{position:absolute;left:163px;top:88px;}
+.dial .number {position: absolute;left: 142px;bottom: 70px;font-size: 32px;font-weight: 900;}
+.dial .name{position: absolute;left:143px;bottom: 20px;font-size:24px;}
+.dial .pointer{position: absolute;width:220px;height: 220px;overflow:hidden;left: 85px;top: 85px;}
+.dial .pointer-s{background: url(../images/point_s.png)0 0 no-repeat;z-index: 3;}
+.dial .pointer-l{background: url(../images/point_l.png)0 0 no-repeat;z-index: 2;}
+
+
+/* 表盘end */
+/* 检测 */
+.circlepack {position: relative;height: 247px;width: 247px;overflow: hidden;}
+.circlepack .circle {width:247px;height:247px;background: url(../images/circle.png) #030829 no-repeat;overflow:hidden;position: absolute;left:0;top:0;z-index: 1;border-radius:50%;-webkit-animation:normalcircle 50s infinite linear;/*匀速 循环*/}
+.circlepack .inner-circle {width:190px;height:190px;background: url(../images/circle.png) #030829 -29px -29px no-repeat;border-radius:50%; overflow:hidden;position: absolute;left:29px;top:29px;z-index: 2;-webkit-animation:reservecircle 50s infinite linear;/*匀速 循环*/}
+.circlepack .text {text-align: center;position: absolute;left:58px;top:58px;z-index: 3;font-size:20px;width: 135px;padding: 50px 0 50px 0;}
+.circlepack .circle-spot{width:247px;height:247px;background: url(../images/circle_spot.png) #030829 no-repeat;overflow:hidden;position: absolute;left:0;top:0;z-index: 1;border-radius:50%;-webkit-animation:normalcircle 50s infinite linear;/*匀速 循环*/}
+@-webkit-keyframes normalcircle{	0%{ transform:rotate(0deg); }	100%{ transform:rotate(-360deg);}}
+@-webkit-keyframes reservecircle{	0%{ transform:rotate(0deg); }	100%{ transform:rotate(360deg);}}
+/* 检测 end */
+
+

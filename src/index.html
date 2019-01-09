@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>监控首页</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<style type="text/css" id="PVstyle">
+	</style>
+	<style type="text/css" id="Staticsstyle">
+	</style>
+	<style type="text/css">
+		@-webkit-keyframes buzz-out {
+         	0%{width:90%;}
+         	50%{width:110%;}
+         	100%{width:100%;}
+    	}
+	</style>
+</head>
+<body>
+	<div class="mainpack">
+		<div class="top">
+			<table class="tb">
+				<tbody>
+					<tr>
+						<td>
+							<div class="dial">
+								<div class="unit">万次/小时</div>
+								<div class="number">100.75</div>
+								<div class="name">PV统计数</div>
+								<div class="pointer pointer-l" id="pointerL1">
+								</div>
+								<div class="pointer pointer-s" id="pointerS1">
+								</div>
+							</div>
+						</td>
+						<td style="width:60%;">
+							<div class="monitorpack">
+								<div class="pos1 iconsbg">
+									<h3 class="icons t5"></h3>
+									<div class="tc num">6587</div>
+									<div class="tc text">网站(HTTP/HTTPS)</div>
+								</div>
+								<div class="pos2 iconsbg">
+									<h3 class="icons t6"></h3>
+									<div class="tc num">8787</div>
+									<div class="tc text">SQLServer数据库</div>
+								</div>
+								<div class="pos3 iconsbg">
+									<h3 class="icons t7"></h3>
+									<div class="tc num">9887</div>
+									<div class="tc text">队列</div>
+								</div>
+								<div class="pos4 iconsbg">
+									<h3 class="icons t8"></h3>
+									<div class="tc num">4887</div>
+									<div class="tc text">TCP服务</div>
+								</div>
+								<div class="pos5 iconsbg">
+									<h3 class="icons t4"></h3>
+									<div class="tc num">5703</div>
+									<div class="tc text">Memcached</div>
+								</div>
+								<div class="pos6 iconsbg">
+									<h3 class="icons t3"></h3>
+									<div class="tc num">6787</div>
+									<div class="tc text">Redis</div>
+								</div>
+								<div class="pos7 iconsbg">
+									<h3 class="icons t1"></h3>
+									<div class="tc num">9887</div>
+									<div class="tc text">PING</div>
+								</div>
+								<div class="pos8 iconsbg">
+									<h3 class="icons t2"></h3>
+									<div class="tc num">4887</div>
+									<div class="tc text">服务器</div>
+								</div>
+								<div class="centre">
+								</div>
+								<div class="centre over centre-over1"></div>
+								<div class="centre over centre-over2"></div>
+								<div class="centre over centre-over3"></div>
+								<div class="centre over centre-over4"></div>
+								<div class="centre over centre-over5"></div>
+								<div class="centre over centre-over6"></div>
+								<div class="centre over centre-over7"></div>
+								<div class="centre over centre-over8"></div>
+								<div class="line">
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="dial">
+								<div class="unit">万次/小时</div>
+								<div class="number">195.15</div>
+								<div class="name">API网关</div>
+								<div class="pointer pointer-l" id="pointerL2">
+								</div>
+								<div class="pointer pointer-s" id="pointerS2">
+									
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="bottom">
+			<table class="tb">
+				<tbody>
+					<tr>
+						<td>
+							<div class="circlepack">
+								<div class="circle-spot">
+								</div>
+								<div class="inner-circle">
+								</div>
+								<div class="text">检测主机<div class="f-green">0</div></div>
+							</div>
+							<div class="circlepack">
+								<div class="circle">
+								</div>
+								<div class="inner-circle">
+								</div>
+								<div class="text">监测网站<div class="f-rose">2466528</div></div>
+							</div>
+						</td>
+						<td style="width: 60%;">
+							<ul class="monitor-menu">
+								<li>
+								<div class="iconsbg">
+								</div>
+									<h3 class="icons t2"></h3>
+									<p>服务监控</p>
+									<ul class="details" id="serviceMonitor">
+										<li><div class="text">Redis</div><div class="bar"><div class="bar redbg" style="width:30%">100/20</div></div></li>
+										<li><div class="text">Memcached</div><div class=" bar"><div class="bar redbg" style="width:20%">74/100</div></div></li>
+										<li><div class="text">MongoDB</div><div class="bar"><div class="bar redbg" style="width:20%;">72/100</div></div></li>
+										<li><div class="text">SQLServer</div><div class="bar"><div class="bar redbg" style="width:15%;">56/100</div></div></li>
+										<li><div class="text">队列</div><div class="bar">0/100</div></li>
+									</ul>
+								</li>
+								<li>
+								<div class="iconsbg">
+								</div>
+									<h3 class="icons t1"></h3>
+									<p>应用监控</p>
+									<ul class="details" id="applicationMonitor">
+										<li><div class="text">HTTP/HTTPS</div><div class="bar"><div class="bar redbg" style="width:30%">100/20</div></div></li>
+										<li><div class="text">PING</div><div class="bar"><div class="bar redbg" style="width:20%">74/100</div></div></li>
+										<li><div class="text">TCP服务</div><div class="bar"><div class="bar redbg" style="width:20%;">72/100</div></div></li>
+										<li><div class="text">JOB服务</div><div class="bar"><div class="bar redbg" style="width:15%;">56/100</div></div></li>
+										<li><div class="text">暂缺</div><div class="bar">0/100</div></li>
+									</ul>
+								</li>
+								<li>
+								<div class="iconsbg">
+								</div>
+									<h3 class="icons t9"></h3>
+									<p>设备监控</p>
+									<ul class="details" id="deviceMonitor">
+										<li><div class="text">服务器</div><div class="bar"><div class="bar"><div class="bar redbg" style="width:30%">100/20</div></div></li>
+										<li><div class="text">暂缺</div><div class="bluebg bar"><div class="bar redbg" style="width:20%">74/100</div></div></li>
+										<li><div class="text">暂缺</div><div class="bluebg bar"><div class="bar redbg" style="width:20%;">72/100</div></div></li>
+										<li><div class="text">暂缺</div><div class="graybg bar"><div class="bar redbg" style="width:15%;">56/100</div></div></li>
+										<li><div class="text">暂缺</div><div class="bar">0/100</div></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<div class="circlepack">
+								<div class="circle">
+								</div>
+								<div class="inner-circle">
+								</div>
+								<div class="text">处理威胁<div class="f-yellow">0</div></div>
+							</div>
+							<div class="circlepack">
+								<div class="circle">
+								</div>
+								<div class="inner-circle">
+								</div>
+								<div class="text">发布预警<div class="f-red">2466528</div></div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://static.emoney.cn/live/Scripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+	var counter = 1;
+	var timer = setInterval(function(){
+		var omonitor = $('.monitorpack');
+		omonitor.addClass('monitorover');
+		if(counter>8){
+			omonitor.removeClass('over8');
+			$('.centre-over1,.centre-over2,.centre-over3,.centre-over4,.centre-over5,.centre-over6,.centre-over7,.centre-over8').hide();
+			omonitor.attr("class","monitorpack");
+			counter=1;
+		}
+		// if(counter>1&&counter<=8){
+		// 	omonitor.removeClass('over'+ parseInt(counter-1));
+		// }
+		$('.centre-over'+parseInt(counter)).show();
+		omonitor.addClass('over'+counter);
+		counter++;
+	},1000);
+
+	var degpercent = (360-60)/100 ;
+	var total =getTotal(100.75);
+	var total1 =getTotal(195.15);
+
+	function getTotal(num){
+		var percent = 100/200;
+		var _total = percent * num;
+		var _maintotal = parseInt(_total);
+		var _mintotal = 100/10000 *(parseFloat(num-parseInt(num)).toFixed(2)*10000);
+		return {maintotal:_maintotal,mintotal:_mintotal};
+	}
+	var deg = total.mintotal * degpercent;
+	document.getElementById("PVstyle").innerHTML="@-webkit-keyframes shakePV{0%{-webkit-transform:rotate("+(deg-5)+"deg);}30%{-webkit-transform:rotate("+(deg+5)+"deg);}60%{-webkit-transform:rotate("+(deg-3)+"deg);}80%{-webkit-transform:rotate("+(deg+3)+"deg);}100%{-webkit-transform:rotate("+deg+"deg);}";
+	document.getElementById("pointerL1").style.animation = 'shakePV 5s infinite linear';
+	document.getElementById('pointerS1').style.transform = 'rotate('+(total.maintotal * degpercent)+'deg)';
+
+	var mindeg = total1.mintotal * degpercent;
+	document.getElementById("Staticsstyle").innerHTML="@-webkit-keyframes shakeStat{0%{-webkit-transform:rotate("+(mindeg-5)+"deg);}30%{-webkit-transform:rotate("+(mindeg+5)+"deg);}60%{-webkit-transform:rotate("+(mindeg-3)+"deg);}80%{-webkit-transform:rotate("+(mindeg+3)+"deg);}100%{-webkit-transform:rotate("+mindeg+"deg);}";
+	document.getElementById("pointerL2").style.animation = 'shakeStat 5s infinite linear';
+	document.getElementById('pointerS2').style.transform = 'rotate('+(total1.maintotal * degpercent)+'deg)';
+
+	//统计数量
+	var maxWidth = $('.details li:eq(0)').outerWidth();
+	var staticsTotal = [{"name":"serviceMonitor","data":[{"name":"Redis","total":94,"errornum":56},{"name":"Memcached","total":74,"errornum":40},{"name":"MongoDB","total":72,"errornum":20},{"name":"SQLServer","total":56,"errornum":10},{"name":"队列","total":32,"errornum":5}]},{"name":"applicationMonitor","data":[{"name":"HTTP/HTTPS","total":80,"errornum":60},{"name":"PING","total":74,"errornum":30},{"name":"TCP服务","total":72,"errornum":25},{"name":"JOB服务","total":56,"errornum":16},{"name":"暂缺","total":32,"errornum":3}]},{"name":"deviceMonitor","data":[{"name":"服务器","total":80,"errornum":40},{"name":"暂缺","total":74,"errornum":20},{"name":"暂缺","total":72,"errornum":15},{"name":"暂缺","total":56,"errornum":10},{"name":"暂缺","total":32,"errornum":3}]}];
+
+	for (var j = 0; j <staticsTotal.length; j++) {
+		var static = staticsTotal[j];
+		var data = static.data;
+		var arrhtml = new Array();
+		for (var i = 0; i < data.length; i++) {
+			var total = data[i].total ? parseInt(data[i].total) : 0;
+			var errornum = data[i].errornum ? parseInt(data[i].errornum) : 0;
+			//debugger;
+			if(total == 0 || errornum == 0){
+				arrhtml.push('<li><div class="text">'+data[i].name+'</div><div class="bar">'+data[i].total+'/'+data[i].errornum+'</div></li>');
+			}else{
+			var percentW = maxWidth/total; 
+			var barwidth = percentW*errornum;
+			arrhtml.push('<li><div class="text">'+data[i].name+'</div><div class="bar"><div class="bar redbg" style="width:'+barwidth+'px;">'+data[i].total+'/'+data[i].errornum+'</div></div></li>');
+			}
+		}	
+		$('#'+static.name).html(arrhtml.join(""));
+	}
+	</script>
+</body>
+</html>
